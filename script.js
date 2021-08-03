@@ -21,7 +21,6 @@ for(let i = 0; i < 3; i++){
 }
 
 
-
 //Função criar disco
 
 function criarDisco(n){
@@ -43,3 +42,4 @@ function posicionarDisco(){
 }
 
 posicionarDisco()
+
