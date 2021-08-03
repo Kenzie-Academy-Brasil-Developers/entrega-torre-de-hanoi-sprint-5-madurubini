@@ -18,7 +18,7 @@
     background: rgb(0, 255, 21);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    flex-direction: column-reverse;
     
    
 }
@@ -28,9 +28,10 @@
     height: 80%;
     border: 1px solid rgb(30, 226, 161);
     background: rgb(22, 22, 22);
-    display: flex;
-    flex-direction: column-reverse;
+    
 }
+
+
 
 .discos {
     width: 20px;
@@ -39,4 +40,35 @@
     border: 1px solid salmon;
     margin: 0 auto;
     display:  flex;
+}
+
+.disco1 {
+    width: 120px;
+    height: 25px;
+   background-color: blueviolet;
+   border: 1px solid white;
+}
+
+.disco2 {
+    width: 100px;
+    height: 25px;
+   background-color: red;
+   border: 1px solid white;
+
+}
+
+.disco3 {
+    width: 80px;
+    height: 25px;
+   background-color: yellow;
+   border: 1px solid white;
+
+}
+
+.disco4 {
+    width: 60px;
+    height: 25px;
+   background-color: blue;
+   border: 1px solid white;
+
 }
