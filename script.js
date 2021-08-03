@@ -3,7 +3,7 @@ let torre = ""
 let baseTorre = ""
 
 function criarTorre(){
-    torre = document.createElement('div')
+    torre = document.createElement('div')//quadrado verde
     baseTorre = document.createElement('div')
     let secao = document.getElementById('jogo')
     torre.className = "torres"
