@@ -6,18 +6,21 @@
     border: 2px solid red;
     height: 500px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
 }
 
 .torres {
     width: 30%;
-    height: 100px;
+    height: 200px;
     border: 1px solid black;
     background: rgb(0, 255, 21);
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
+   
 }
 
 .base {
@@ -25,4 +28,15 @@
     height: 80%;
     border: 1px solid rgb(30, 226, 161);
     background: rgb(22, 22, 22);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.discos {
+    width: 20px;
+    background-color: gainsboro;
+    height: 20px;
+    border: 1px solid salmon;
+    margin: 0 auto;
+    display:  flex;
 }
