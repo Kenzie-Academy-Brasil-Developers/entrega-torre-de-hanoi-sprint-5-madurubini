@@ -1,28 +1,103 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 5px;
+    margin: 0 auto;
+    min-height: 95vh;
+}
 
 
-#jogo {
-    width: 90%;
-    background: rgb(61, 176, 211);
-    border: 2px solid red;
-    height: 500px;
+.container{
+    max-width: 90vw;
+    background-image: url("https://img.freepik.com/fotos-gratis/bela-vista-do-deserto-tranquilo-sob-o-ceu-claro-capturado-em-marrocos_181624-8496.jpg?size=626&ext=jpg");
+    background-size: cover ;
+    background-position: center;
+    margin: 0 auto;
+    /* min-height: 300px; */
+    padding: 20px;
+}
+ h1 {
+    text-align: center;
+   
+   
+}
+
+#jogo {    
+    min-height: 250px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
+    width: 100%;
+   
 }
 
 .torres {
-    width: 30%;
-    height: 100px;
-    border: 1px solid black;
-    background: rgb(0, 255, 21);
+    width: 32%;
+    height: 200px;
+    border: 1px solid transparent;
+    background: #B8713E;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    flex-direction: column-reverse;
+   
+    
 }
 
-.base {
-    width: 20px;
-    height: 80%;
-    border: 1px solid rgb(30, 226, 161);
-    background: rgb(22, 22, 22);
+.popup{
+    width: 100px;
+    height: 100px;
+}
+
+.torres:hover{
+    background:#71828C ;
+}
+
+.legenda{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+
+.disco1 {
+    width: 100px;
+    height: 25px;
+   border: 1px solid #DBB382;
+   background-image: url("https://b.rgbimg.com/users/m/mz/mzacha/300/o2IMzrM.jpg");
+}
+
+.disco2 {
+    width: 80px;
+    height: 25px;
+   border: 1px solid #DBB382;
+   background-image: url("https://b.rgbimg.com/users/m/mz/mzacha/300/o2IMzrM.jpg");
+
+
+}
+
+.disco3 {
+    width: 60px;
+    height: 25px;
+   border: 1px solid #DBB382;
+   background-image: url("https://b.rgbimg.com/users/m/mz/mzacha/300/o2IMzrM.jpg");
+
+
+}
+
+.disco4 {
+    width: 40px;
+    height: 25px;
+   border: 1px solid #DBB382;
+   background-image: url("https://b.rgbimg.com/users/m/mz/mzacha/300/o2IMzrM.jpg");
+
+
+}
+
+@media (min-width: 780px){
+    body {
+        background-color: red;
+    }
 }

@@ -9,12 +9,30 @@
     <title>Torre de Hanoi</title>
 </head>
 <body>
-    <header>
-        <h1>Desafio da Torre de Hanoi</h1>
-    </header>
-
+    
     <main>
-        <section id="jogo"></section>
+       <div class="container">
+           <h1>Torre de Hanoi</h1>
+            <section id="jogo">
+                
+                
+                <div class="torres" id="inicial" onclick="game('inicial')"> </div>
+                
+                <div class="torres" id="meio" onclick="game('meio')">  </div>
+                
+                <div class="torres" id="final" onclick="game('final')"></div>
+               
+                
+            </section>
+            <div class="legenda">
+                <p>Start</p>
+                <p>Offset</p>
+                <p>End</p>
+            </div>
+
+       </div>
+
+       
     </main>
 
     <script src="script.js"></script>
