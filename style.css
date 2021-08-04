@@ -1,10 +1,9 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Chelsea Market', sans-serif;
     color: #FFFFFF;
-    font-weight: bold;
     padding: 5px;
     margin: 0 auto;
-    min-height: 95vh;
+   
 }
 
 
@@ -43,11 +42,6 @@ body{
     flex-direction: column-reverse;
    
     
-}
-
-.popup{
-    width: 100px;
-    height: 100px;
 }
 
 .torres:hover{
@@ -98,6 +92,63 @@ body{
 
 @media (min-width: 780px){
     body {
-        background-color: red;
+        font-size: 24px;
+        max-width: 1024px;
+    }
+
+    .container{
+        background-image: url("https://www.newstatesman.com/sites/default/files/styles/lead_image/public/Longreads_2021/06/2021_25_deep_sea.jpg?itok=W_d0BSsJ");
+        background-size: cover ;
+        background-position: center;
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .torres{
+        background-color: #1AA0CE;
+    }
+
+    .torres:hover {
+        background-color: #0080B4;
+    }
+
+    .disco1 {
+        width: 200px;
+        height: 30px;
+       border: 1px solid #0091C7;
+       background-image: url("https://super.abril.com.br/wp-content/uploads/2020/04/si_415_coral_branco.jpg");
+       background-size: cover ;
+       background-position: center;
+    }
+    
+    .disco2 {
+        width: 160px;
+        height: 30px;
+       border: 1px solid #0091C7;
+       background-image: url("https://diariodoturismo.com.br/wp-content/uploads/2019/06/shutterstock_243413038.jpg");
+       background-size: cover ;
+       background-position: center;
+    
+    }
+    
+    .disco3 {
+        width: 120px;
+        height: 30px;
+       border: 1px solid #0091C7;
+       background-image: url("https://socientifica.com.br/wp-content/uploads/2020/10/Protetor-Solar-x-Recife-de-Corais.jpg");
+       background-size: cover ;
+       background-position: center;    
+    }
+    
+    .disco4 {
+        width: 80px;
+        height: 30px;
+       border: 1px solid #0091C7;
+       background-image: url("https://www.petz.com.br/blog/wp-content/uploads/2020/07/corais3.jpg");
+       background-size: cover ;
+       
+    
     }
 }

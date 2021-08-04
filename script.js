@@ -1,11 +1,6 @@
 let torreInicial = document.getElementById("inicial")
 let torreMeio = document.getElementById("meio")
 let torreFinal = document.getElementById("final")
-let popup = document.getElementsByClassName("popup")
-
-
-
-
 
 
 const disco1 = document.createElement('div')
@@ -65,7 +60,9 @@ function game(tower) {
     condicaoVitoria()
 }
 
-function reset() {//resetando
+
+
+function reset() {
     firstClick.style.border = '2px solid transparent'
     secondClick.style.border = '2px solid transparent'
     firstClick = undefined
@@ -79,6 +76,8 @@ function reset() {//resetando
 function condicaoVitoria(){
     if(torreFinal.childElementCount === 4){
         alert("Parabéns você Venceu")
+        const audio = document.querySelector("audio")
+        audio.play()
     }
 }
 
