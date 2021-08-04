@@ -14,7 +14,7 @@
 .torres {
     width: 30%;
     height: 200px;
-    border: 1px solid black;
+    border: 1px solid transparent;
     background: rgb(0, 255, 21);
     display: flex;
     align-items: center;
