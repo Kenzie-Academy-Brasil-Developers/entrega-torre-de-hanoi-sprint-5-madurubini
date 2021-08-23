@@ -1,5 +1,8 @@
+:root{
+    --font: 'Chelsea Market', sans-serif
+}
 body{
-    font-family: 'Chelsea Market', sans-serif;
+    font-family: var(--font);
     color: #FFFFFF;
     padding: 5px;
     margin: 0 auto;
@@ -40,8 +43,6 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
-   
-    
 }
 
 .torres:hover{
@@ -53,8 +54,6 @@ body{
     justify-content: space-around;
     align-items: flex-start;
 }
-
-
 
 .disco1 {
     width: 100px;
@@ -89,7 +88,47 @@ body{
 
 
 }
-
+.estili-modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    top: -100%;
+    display: block;
+    transition: 350ms;
+}
+.modal{
+    width: 50%;
+    height: 60%;
+    margin: 80px auto 0 auto;
+    
+}
+.modal__info {
+   margin-top: 30%;
+}
+.modal__info p {
+    color: black;
+    text-align: center;
+}
+#resetar{
+    position: absolute;
+    left: 50%;
+    transform: translate(-60%);
+    font-family: var(--font);
+    font-size: 15px;
+    color: #000;
+    margin: 20px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 350ms;
+    cursor: pointer;
+    
+}
+#resetar:hover{
+    background: #cfb099;
+    transition: 350ms;
+}
 @media (min-width: 780px){
     body {
         font-size: 24px;
@@ -151,4 +190,11 @@ body{
        
     
     }
+    #resetar:hover{
+        background: #acc2ca;
+    }
+    .modal__info {
+        position: relative;
+        right: 20%;
+     }
 }

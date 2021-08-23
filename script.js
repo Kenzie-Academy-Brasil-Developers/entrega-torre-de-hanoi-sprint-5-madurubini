@@ -1,6 +1,12 @@
+let torre = document.createElement('div')
+torre.className = 'torres'
+
 let torreInicial = document.getElementById("inicial")
+torreInicial.id = 'inicial'
 let torreMeio = document.getElementById("meio")
+torreMeio.id = 'meio'
 let torreFinal = document.getElementById("final")
+torreFinal.id = 'final'
 
 
 const disco1 = document.createElement('div')
@@ -29,6 +35,7 @@ let lastElementOfFirst
 let lastElementOfSecond 
 function game(tower) {
     let element = document.getElementById(tower)
+    console.log(element)
     if(firstClick === undefined){
         
         firstClick = element
@@ -75,10 +82,21 @@ function reset() {
 
 function condicaoVitoria(){
     if(torreFinal.childElementCount === 4){
-        alert("Parabéns você Venceu")
+        victoria()
         const audio = document.querySelector("audio")
         audio.play()
     }
 }
+
+function victoria() {
+    let res = document.getElementById('modall')
+    res.style.top = '0'
+
+    let botao = document.getElementById('resetar')
+    botao.addEventListener('click', (event)=>{
+        window.location.reload()
+    })
+}
+
 
 
